@@ -44,14 +44,18 @@
     display: grid;
 }
 
-.grid-cols-3{
+.grid-cols-2{
     grid-template-columns: repeat(2,1fr);
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
 }
 
 //Seccion distancia entre elementos
 
 .grid-gap-2{
-    gap: 3rem;
+    gap: 2rem;
 }
 
 //Seccion contentido

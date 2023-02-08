@@ -4,18 +4,18 @@
  * @date 03 Febrero del 2023
  * @descripcion Componente global para el estilo y manejo de la barra de navegacion
  * @editor
- * @dateUpdate 
- * @descripcionUpdate 
- * @version 1.0.0
- * @params {nav, navId, children}
+ * @dateUpdate 08 Febrero del 2023
+ * @descripcionUpdate refactor de codigo
+ * @version 1.0.2
+ * @params {children}
  */
 
 import React from 'react';
 
 export default function Bar(props) {
     return (
-        <nav className={props.options.navStyle} id={props.options.navId}>
-            <ul className='items'>
+        <nav className='navbar grid' id='navbar'>
+            <ul className='items grid grid-gap-1'>
                 {
                 props.children
             }</ul>

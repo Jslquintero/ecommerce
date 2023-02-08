@@ -1,111 +1,41 @@
 @import "../../assets/styles/variables";
 
-.navbar-info {
+.site-header-main {
     background-color: $secondaryColor;
-    width: 100%;
-    height: 7vh;
-    display: grid;
-
-    .items {
-        grid-template-columns: 26% 9% 47% 10%;
-        grid-template-areas: "a b c d";
-        grid-gap: 1rem;
-        display: grid;
-    }
-    .horarios {
-        grid-area: a;
-        font-size: 1.3rem;
-        list-style: none;
-    }
-    .contacto {
-        grid-area: b;
-        font-size: 1.3rem;
-        list-style: none;
-    }
-    .redes {
-        grid-area: d;
-        font-size: 1.3rem;
-        list-style: none;
-    }
-    .links-text {
-        color: $secondaryFontColor;
-        text-decoration: none;
-        list-style: none;
-        grid-gap: 0.5rem;
-        font-weight: 600;
-        font-size: 1.3rem;
-    }
-
-    .horario-item {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-    }
-    .contact-item {
-        display: grid;
-        grid-template-columns: 30% 30%;
-        grid-gap: 1rem;
-    }
-
-    .red-item {
-        display: grid;
-        grid-template-columns: 46% 55%;
-        grid-gap: 1rem;
+    .site-header-main-wrapper {
+        grid-template-columns: 24% 76%;
+        .site-header-main-item{
+            font-size: 1.3rem;
+            list-style: none;
+            .links-text{
+                color:$secondaryFontColor;
+                text-decoration: none;
+                margin: 2.5rem;
+            }
+        }
     }
 }
 
-.navbar {
-    background-color: $primaryColor;
-    width: 100%;
-    height: 7vh;
-    display: grid;
-
-    .items {
-        grid-template-columns: 36% 49% 7% 1%;
-        grid-template-areas: "a b c d";
-        grid-gap: 1rem;
-        display: grid;
-
-        .navbar-logo {
-            grid-area: a;
-            list-style: none;
-        }
-
-        .hb-bar {
-            display: none;
-            grid-area: d;
-            justify-self: end;
-        }
-
-        .menu-1 {
-            display: grid;
-            grid-area: b;
-            list-style: none;
-            .menu-item {
-                display: grid;
-                grid-template-columns: 18% 24%;
-                grid-gap: 1rem;
+.site-navigation-wrapper {
+    .navbar {
+        background-color: $primaryColor;
+        .items {
+            grid-template-columns: 25% 68% 11%;
+            grid-template-areas: "a b c";
+            .hb-bar {
+                display: none;
+                grid-area: c;
             }
-        }
-
-        .menu-2 {
-            display: grid;
-            grid-area: c;
-            list-style: none;
-            .menu2-item {
-                display: grid;
-                grid-template-columns: 61% 38%;
-                grid-gap: 1rem;
+            .links {
+                font-size: 1.3rem;
+                list-style: none;
+                grid-area: b;
+                .links-text{
+                    color:$primaryFontColor;
+                    text-decoration: none;
+                    margin: 2.5rem;
+                }
             }
-        }
-
-        .links-text {
-            color: $primaryFontColor;
-            text-decoration: none;
-            list-style: none;
-            grid-gap: 0.5rem;
-            font-weight: 600;
-            font-size: 1.3rem;
         }
     }
 }
@@ -113,10 +43,6 @@
 @media screen and (max-width: 580px) {
     .navbar {
         .items {
-            grid-template-columns: 0% 21% 70%;
-            grid-template-areas: "a b c";
-            grid-gap: 1rem;
-            display: grid;
             .links {
                 display: grid;
                 grid-area: c;

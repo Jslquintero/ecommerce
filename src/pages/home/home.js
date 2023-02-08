@@ -12,53 +12,34 @@
 
 import React from "react";
 import Navbar from "../../components/nav/navbar";
-import ProductCard from "../../components/card/product/card-product";
+import Card from "../../components/card/card";
 import Accordion from "../../components/accordion/accordion";
+import Select from "../../components/form/select/select";
 import './_style.scss';
 import './../../assets/styles/styles.scss';
 
 export default function Home() {
 
     const callApi = () => { // consume api
-        const tarjetas = [
-            {
-                src: "https://picsum.photos/200/300",
+        const cards = [{
+                img: "https://picsum.photos/200/300",
                 title: "GPI",
-                price: "1000",
-                description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            }, {
-                src: "https://picsum.photos/200/300",
-                title: "GPI",
-                price: "1000",
-                description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            }, {
-                src: "https://picsum.photos/200/300",
-                title: "GPI",
-                price: "1000",
-                description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            }, {
-                src: "https://picsum.photos/200/300",
-                title: "GPI",
-                price: "1000",
-                description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            },
-        ]
-        const data = tarjetas.map((tarjeta) => {
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            }]
+        const data = cards.map((card) => {
             return (
-                <ProductCard src={
-                        tarjeta.src
+                <Card img={
+                        card.img
                     }
                     title={
-                        tarjeta.title
+                        card.title
                     }
-
-
-                    price={
-                        tarjeta.price
+                    subtitle={
+                        card.subtitle
                     }
-
-                    description={
-                        tarjeta.description
+                    text={
+                        card.text
                     }/>
             )
         });
@@ -72,19 +53,18 @@ export default function Home() {
             <Navbar/>
 
 
-            <div className="container">
+            {/* <div className="container">
 
                 <Accordion/>
-
+                <div className="select-container">
+                    <Select/>
+                </div>
                 <div className="cards grid-col-span-2">
                     {
                     callApi()
                 } </div>
 
-            </div>
+            </div> */}
         </>
     );
 }
-
-
-

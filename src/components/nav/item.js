@@ -28,7 +28,7 @@ export default function Item(props) {
         item.ref
     } </a>);
     return (
-        <li className={props.itemStyle}>
+        <li className="nav-item">
             {itemsLinks}
         </li>
     );

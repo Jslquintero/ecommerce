@@ -11,11 +11,13 @@
  */
 
 import React from 'react';
+import './_style.scss';
+import './../../assets/styles/styles.scss';
 
 export default function Bar(props) {
     return (
         <nav className='navbar grid' id='navbar'>
-            <ul className='items grid grid-gap-1'>
+            <ul className='items grid-gap-1 content-right'>
                 {
                 props.children
             }</ul>

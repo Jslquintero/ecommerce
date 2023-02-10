@@ -53,7 +53,7 @@ export default function Navbar(props) {
             <div className='site-navigation-wrapper'>
 
                 <Bar>
-                    <div className="hb-bar content-right"
+                    <div className="hb-bar"
                         onClick={
                             () => (header !== 'links') ? setHeader('links') : setHeader('links-show')
                     }>
@@ -64,7 +64,7 @@ export default function Navbar(props) {
                         </svg>
                     </div>
 
-                    <div className={header+' content-right'}>
+                    <div className={header}>
                         <Item items={
                             [
                                 {

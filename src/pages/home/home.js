@@ -13,7 +13,6 @@
 import React from "react";
 import Navbar from "../../components/nav/navbar";
 import Card from "../../components/card/card";
-import Accordion from "../../components/accordion/accordion";
 import Select from "../../components/form/select/select";
 import './_style.scss';
 import './../../assets/styles/styles.scss';
@@ -21,15 +20,49 @@ import './../../assets/styles/styles.scss';
 export default function Home() {
 
     const callApi = () => { // consume api
-        const cards = [{
+        const cards = [
+            {
                 img: "https://picsum.photos/200/300",
                 title: "GPI",
                 subtitle: "1000",
                 text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            }]
+            }, {
+                img: "https://picsum.photos/200/300",
+                title: "GPI",
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            },
+            {
+                img: "https://picsum.photos/200/300",
+                title: "GPI",
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            }, {
+                img: "https://picsum.photos/200/300",
+                title: "GPI",
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            },
+            {
+                img: "https://picsum.photos/200/300",
+                title: "GPI",
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            }, {
+                img: "https://picsum.photos/200/300",
+                title: "GPI",
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            }
+        ]
         const data = cards.map((card) => {
             return (
-                <Card img={
+                <Card className={
+                        {
+                            styleType: "card"
+                        }
+                    }
+                    img={
                         card.img
                     }
                     title={
@@ -47,24 +80,41 @@ export default function Home() {
         return data;
     }
 
+    const options = [
+        {
+            value: "1",
+            label: "Los Más Vendidos"
+        }, {
+            value: "2",
+            label: "Opcion 2"
+        }, {
+            value: "3",
+            label: "Opcion 3"
+        }, {
+            value: "4",
+            label: "opcion 4"
+        }
+    ]
 
     return (
         <>
             <Navbar/>
 
 
-            {/* <div className="container">
+            <div className="container">
 
-                <Accordion/>
-                <div className="select-container">
-                    <Select/>
+                <div className="sidebar"></div>
+                <div className="container-wrapper">
+                    <div className="select-wrapper content-left">
+                        <h3>Vendas y Vendajes</h3>
+                        <Select options={options}/>
+                    </div>
+                    <div className="card-wrapper">
+                        {callApi()}
+                    </div>
                 </div>
-                <div className="cards grid-col-span-2">
-                    {
-                    callApi()
-                } </div>
 
-            </div> */}
+            </div>
         </>
     );
 }

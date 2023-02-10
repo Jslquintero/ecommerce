@@ -4,11 +4,11 @@
     background-color: $secondaryColor;
     .site-header-main-wrapper {
         grid-template-columns: 24% 76%;
-        .site-header-main-item{
+        .site-header-main-item {
             font-size: 1.3rem;
             list-style: none;
-            .links-text{
-                color:$secondaryFontColor;
+            .links-text {
+                color: $secondaryFontColor;
                 text-decoration: none;
                 margin: 2.5rem;
             }
@@ -19,44 +19,32 @@
 .site-navigation-wrapper {
     .navbar {
         background-color: $primaryColor;
+        width: 100%;
+        height: 6vh;
+        display: grid;
         .items {
-            grid-template-columns: 25% 68% 11%;
+            grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "a b c";
+            display: grid;
+            @media (max-width: 991px) {
+                grid-template-columns: 15% 60% 25%;
+                grid-template-areas: "a b c";
+            }
+
             .hb-bar {
                 display: none;
                 grid-area: c;
             }
             .links {
+                grid-area: b;
                 font-size: 1.3rem;
                 list-style: none;
-                grid-area: b;
-                .links-text{
-                    color:$primaryFontColor;
-                    text-decoration: none;
-                    margin: 2.5rem;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .navbar {
-        .items {
-            .links {
-                display: grid;
-                grid-area: c;
-                grid-template-columns: repeat((2, 1fr));
-            }
-            .hb-bar {
-                display: grid;
-                grid-area: c;
-                justify-self: end;
-
                 .nav-item {
-                    width: 100%;
-                    height: 0.2rem;
-                    background-color: $secondaryFontColor;
+                    .links-text {
+                        color: $primaryFontColor;
+                        text-decoration: none;
+                        margin: 2.5rem;
+                    }
                 }
             }
         }

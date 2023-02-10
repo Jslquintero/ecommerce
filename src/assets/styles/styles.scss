@@ -2,12 +2,14 @@
 @import 'general';
 
 
-//Seccion width
+/*#region Seccion width*/
 .w-90{
     width: 95%;
 }
 
-//Seccion margenes
+/*#endregion*/
+
+/*#region Seccion margenes*/
 .my-auto{
     margin-top: auto;
     margin-bottom: auto;
@@ -22,7 +24,13 @@
     margin: auto;
 }
 
-//Seccion padding
+.margin-top-1{
+    margin-top: 1rem;
+}
+
+/*#endregion*/
+
+/*#region Seccion padding*/
 
 .py-auto{
     padding-top: auto;
@@ -38,8 +46,9 @@
     padding: auto;
 }
 
+/*#endregion*/
 
-//Seccion displays
+/*#region Seccion displays*/
 .grid{
     display: grid;
 }
@@ -52,7 +61,9 @@
     grid-column: span 2;
 }
 
-//Seccion distancia entre elementos
+/*#endregion*/
+
+/*#region Seccion distancia entre elementos*/
 
 .grid-gap-1{
     gap: 1rem;
@@ -62,7 +73,9 @@
     gap: 2rem;
 }
 
-//Seccion contentido
+/*#endregion*/
+
+/*#region Seccion contentido*/
 .content-center{
     align-items: start;
     justify-items: center;
@@ -83,8 +96,9 @@
     align-self: center;
     justify-self: start;
 }
+/*#endregion*/
 
-//Seccion texto
+/*#region Seccion texto*/
 .text-center{
     text-align: center;
 }
@@ -96,3 +110,4 @@
 .text-right{
     text-align: right;
 }
+/*#endregion*/

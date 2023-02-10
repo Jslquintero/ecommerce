@@ -1,3 +1,84 @@
 @import "../../assets/styles/variables";
 
+.card {
+    background-color: $secondaryFontColor;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "img body";
+    padding: 1rem;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
 
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img {
+        grid-area: img;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .card-body {
+        display: grid;
+        grid-area: body;
+        align-items: center;
+        gap: 10px;
+        padding: 1rem;
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $primaryFontColor;
+        }
+
+        .card-subtitle {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $primaryFontColor;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .btn-card {
+            background-color: $secondaryFontColor;
+            border-radius: 10px;
+            display: grid;
+            gap: 1rem;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem 1rem;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: $primaryColor;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .card {
+        grid-template-columns: 100%;
+        grid-template-areas: "img" "body";
+
+        .card-body {
+            padding: 1rem 0;
+            grid-area: body;
+        }
+
+        .card-img {
+            grid-area: img;
+        }
+    }
+}

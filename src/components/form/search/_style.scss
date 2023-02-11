@@ -1,0 +1,19 @@
+.search {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    width:100%;
+    .input-text{
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        border-right: none;
+        border-radius: 3px 0 0 3px;
+        outline: none;
+    }
+    span.fa-search {
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+    }
+}

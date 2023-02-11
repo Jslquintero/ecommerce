@@ -1,6 +1,6 @@
 /**
  * @author Jose Salvador lopez
- * @name Navbar tipo function
+ * @name home page
  * @date 03 Febrero del 2023
  * @descripcion Pagina principal
  * @editor Jose Salvador lopez
@@ -14,6 +14,7 @@ import React from "react";
 import Navbar from "../../components/nav/navbar";
 import Card from "../../components/card/card";
 import Select from "../../components/form/select/select";
+import Search from "../../components/form/search/search";
 import './_style.scss';
 import './../../assets/styles/styles.scss';
 
@@ -26,7 +27,14 @@ export default function Home() {
                 title: "GPI",
                 subtitle: "1000",
                 text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            }, {
+            },
+            {
+                img: "https://picsum.photos/200/300",
+                title: "GPI",
+                subtitle: "1000",
+                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+            },
+            {
                 img: "https://picsum.photos/200/300",
                 title: "GPI",
                 subtitle: "1000",
@@ -38,12 +46,6 @@ export default function Home() {
                 subtitle: "1000",
                 text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
             }, {
-                img: "https://picsum.photos/200/300",
-                title: "GPI",
-                subtitle: "1000",
-                text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-            },
-            {
                 img: "https://picsum.photos/200/300",
                 title: "GPI",
                 subtitle: "1000",
@@ -58,9 +60,7 @@ export default function Home() {
         const data = cards.map((card) => {
             return (
                 <Card className={
-                        {
-                            styleType: "card"
-                        }
+                        {styleType: "card"}
                     }
                     img={
                         card.img
@@ -102,16 +102,33 @@ export default function Home() {
 
 
             <div className="container">
-
-                <div className="sidebar"></div>
                 <div className="container-wrapper">
-                    <div className="select-wrapper content-left">
-                        <h3>Vendas y Vendajes</h3>
-                        <Select options={options}/>
+                    <div className="filter-menu-wrapper">
+
+                        <div className="select-wrapper content-left">
+                            <div className="select-product grid">
+                                <h3>Vendas y Vendajes</h3>
+                                <Select options={options}/>
+                            </div>
+                            <div className="select-brand grid">
+                                <h3>Marca</h3>
+                                <Select options={options}/>
+                            </div>
+                            <div className="select-price grid">
+                                <h3>Precio</h3>
+                                <Select options={options}/>
+                            </div>
+                        </div>
+
+                        <div className="search-wrapper">
+                            <Search/>
+                        </div>
+
                     </div>
                     <div className="card-wrapper">
-                        {callApi()}
-                    </div>
+                        {
+                        callApi()
+                    } </div>
                 </div>
 
             </div>

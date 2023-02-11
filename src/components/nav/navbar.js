@@ -21,7 +21,6 @@ export default function Navbar(props) {
     return (
 
         <>
-
             <div className='site-header-main grid'>
                 <div className='site-header-main-wrapper grid'>
                     <div className='site-header-main-logo'>
@@ -37,19 +36,19 @@ export default function Navbar(props) {
                                 }, {
                                     route: "/",
                                     styleClass: 'links-text',
-                                    ref:"Correo",
+                                    ref:" graciasporinvitar@email.com",
                                     children: <i className="fas fa-envelope"></i>
                                 }, {
                                     route: "/",
                                     styleClass: 'links-text',
-                                    ref: 'whatsapp',
+                                    ref: ' 1234567891',
                                     children: <i className="fab fa-whatsapp"></i>
                                 }
                             ]
                         }/>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div className='site-navigation-wrapper'>
 
                 <Bar>

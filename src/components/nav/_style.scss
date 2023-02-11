@@ -3,7 +3,17 @@
 .site-header-main {
     background-color: $secondaryColor;
     .site-header-main-wrapper {
-        grid-template-columns: 24% 76%;
+        grid-template-columns: 20% 80%;
+        @media (max-width: 680px) {
+            grid-template-columns: 100%;
+        }
+        .site-header-main-logo{
+            display:grid;
+            margin:0.5rem;
+            @media (max-width: 580px) {
+                margin-left: 30%;
+            }
+        }
         .site-header-main-item {
             font-size: 1.3rem;
             list-style: none;
@@ -11,10 +21,14 @@
                 color: $secondaryFontColor;
                 text-decoration: none;
                 margin: 2.5rem;
+                @media (max-width: 680px) {
+                    margin: 0.5rem;
+                }
             }
         }
     }
 }
+
 
 .site-navigation-wrapper {
     .navbar {
@@ -23,20 +37,12 @@
         height: 6vh;
         display: grid;
         .items {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: "a b c";
+            grid-template-columns: 1fr;
             display: grid;
-            @media (max-width: 991px) {
-                grid-template-columns: 15% 60% 25%;
-                grid-template-areas: "a b c";
-            }
-
             .hb-bar {
                 display: none;
-                grid-area: c;
             }
             .links {
-                grid-area: b;
                 font-size: 1.3rem;
                 list-style: none;
                 .nav-item {
@@ -50,3 +56,5 @@
         }
     }
 }
+
+

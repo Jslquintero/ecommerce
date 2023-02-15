@@ -28,7 +28,7 @@ export default function Item(props) {
         item.ref
     } </a>);
     return (
-        <li className="nav-item">
+        <li className="nav-item grid grid-cols-1">
             {itemsLinks}
         </li>
     );

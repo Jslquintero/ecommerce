@@ -46,6 +46,7 @@
                 font-size: 1.3rem;
                 list-style: none;
                 .nav-item {
+                    text-align: center;
                     .links-text {
                         color: $primaryFontColor;
                         text-decoration: none;
@@ -58,3 +59,12 @@
 }
 
 
+@media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+    .grid-cols-2{
+      grid-template-columns: 1fr;
+    }
+  }

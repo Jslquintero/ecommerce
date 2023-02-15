@@ -69,8 +69,9 @@
       grid-template-columns: 1fr;
     }
     .site-header-main-item{
-        justify-self: center;
+        justify-self: center !important;
         .nav-item {
+            text-align: center;
             display: grid;
             grid-template-columns: 1fr;
         }

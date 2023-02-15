@@ -75,8 +75,12 @@
             display: grid;
             grid-template-columns: 1fr;
         }
-    } 
+    }
+    .site-navigation-wrapper .navbar {
+        height: auto !important;
+    }
     .site-navigation-wrapper .navbar .items .hb-bar {
+        margin-right: 5%;
         display: block;
     }
     .site-navigation-wrapper .navbar .items .links{
@@ -85,6 +89,16 @@
     .site-navigation-wrapper .navbar .items .links-show{
         justify-self: end;
         display: block;
+        font-size: 1.3rem;
+        list-style: none;
+        .nav-item {
+            text-align: center;
+            .links-text {
+                color: $primaryFontColor;
+                text-decoration: none;
+                margin: 2.5rem;
+            }
+        }
     }
 }
         

@@ -76,7 +76,16 @@
             grid-template-columns: 1fr;
         }
     } 
-
+    .site-navigation-wrapper .navbar .items .hb-bar {
+        display: block;
+    }
+    .site-navigation-wrapper .navbar .items .links{
+        display: none;
+    }
+    .site-navigation-wrapper .navbar .items .links-show{
+        justify-self: end;
+        display: block;
+    }
 }
         
 

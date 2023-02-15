@@ -16,7 +16,8 @@ import './../../assets/styles/styles.scss';
 
 export default function Bar(props) {
     return (
-        <nav className='navbar grid' id='navbar'>
+        <nav className='navbar grid grid-cols-2' id='navbar'>
+            <div></div>
             <ul className='items grid-gap-1 content-right'>
                 {
                 props.children

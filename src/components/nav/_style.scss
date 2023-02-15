@@ -92,6 +92,8 @@
         font-size: 1.3rem;
         list-style: none;
         .nav-item {
+            display: grid;
+            grid-template-columns: 1fr;
             text-align: center;
             .links-text {
                 color: $primaryFontColor;

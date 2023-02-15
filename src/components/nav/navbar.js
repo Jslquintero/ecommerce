@@ -26,7 +26,7 @@ export default function Navbar(props) {
                     <div className='site-header-main-logo'>
                         <img alt="logo" src="https://picsum.photos/136/40" className="logo-bar"/>
                     </div>
-                    <div className='site-header-main-item content-right'>
+                    <div className='site-header-main-item'>
                         <Item items={
                             [
                                 {

@@ -15,6 +15,7 @@
             }
         }
         .site-header-main-item {
+            justify-self: end;
             font-size: 1.3rem;
             list-style: none;
             .links-text {
@@ -67,10 +68,13 @@
     .grid-cols-2{
       grid-template-columns: 1fr;
     }
-    .site-header-main-item .nav-item {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+    .site-header-main-item{
+        justify-self: center;
+        .nav-item {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    } 
 
 }
         

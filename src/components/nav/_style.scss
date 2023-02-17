@@ -3,6 +3,7 @@
 .site-header-main {
     background-color: $secondaryColor;
     .site-header-main-wrapper {
+        width: 100%;
         grid-template-columns: 20% 80%;
         @media (max-width: 680px) {
             grid-template-columns: 100%;
@@ -18,6 +19,8 @@
             justify-self: end;
             font-size: 1.3rem;
             list-style: none;
+            margin-top: auto;
+            margin-bottom: auto;
             .links-text {
                 color: $secondaryFontColor;
                 text-decoration: none;

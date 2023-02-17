@@ -77,6 +77,10 @@
     grid-column: span 2;
 }
 
+.grid-cols-80-20{
+    grid-template-columns: 80% 20%;
+}
+
 /*#endregion*/
 
 /*#region Seccion distancia entre elementos*/

@@ -52,6 +52,9 @@ export default function Navbar(props) {
             <div className='site-navigation-wrapper'>
 
                 <Bar>
+                    <div className='site-header-main-logo-hb'>
+                        <img alt="logo" src="https://picsum.photos/136/40" className="logo-bar"/>
+                    </div>
                     <div className="hb-bar"
                         onClick={
                             () => (header !== 'links') ? setHeader('links') : setHeader('links-show')

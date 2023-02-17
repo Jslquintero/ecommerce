@@ -48,7 +48,7 @@
         display: grid;
         .items {
             display: grid;
-            grid-template-columns: 80% 20%;
+            grid-template-columns: 1fr;
             .hb-bar {
                 display: none;
             }
@@ -88,18 +88,22 @@
     .site-navigation-wrapper .navbar {
         height: auto !important;
     }
-    .site-navigation-wrapper .navbar .items .hb-bar {
-        margin-right: 5%;
-        display: block;
+    .site-navigation-wrapper .navbar .items {
+        grid-template-columns: 80% 20% !important;
+        .hb-bar {
+            margin-right: 5%;
+            display: block;
+        }
     }
     .site-navigation-wrapper .navbar .items .links{
         display: none;
     }
     .site-navigation-wrapper .navbar .items .links-show{
-        justify-self: end;
+        justify-self: center;
         display: block;
         font-size: 1.3rem;
         list-style: none;
+        margin-left: 21%;
         .nav-item {
             display: grid;
             grid-template-columns: 1fr;
@@ -107,7 +111,8 @@
             .links-text {
                 color: $primaryFontColor;
                 text-decoration: none;
-                margin: 2.5rem;
+                margin: auto;
+                padding: 0.5rem;
             }
         }
     }

@@ -47,8 +47,8 @@
         height: 6vh;
         display: grid;
         .items {
-            grid-template-columns: 1fr;
             display: grid;
+            grid-template-columns: 80% 20%;
             .hb-bar {
                 display: none;
             }

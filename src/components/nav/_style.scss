@@ -3,7 +3,6 @@
 .site-header-main {
     background-color: $secondaryColor;
     .site-header-main-wrapper {
-        width: 100%;
         grid-template-columns: 20% 80%;
         @media (max-width: 680px) {
             grid-template-columns: 100%;
@@ -92,6 +91,7 @@
         height: auto !important;
     }
     .site-navigation-wrapper .navbar .items {
+        width: 100%;
         grid-template-columns: 80% 20% !important;
         .hb-bar {
             margin-right: 5%;

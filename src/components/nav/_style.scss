@@ -28,14 +28,14 @@
             }
         }
     }
-    .site-header-main-logo-hb{
-        display:none;
-        margin:0.5rem;
-        @media (max-width: 580px) {
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1fr;
-        }
+}
+.site-header-main-logo-hb{
+    display:none;
+    margin:0.5rem;
+    @media (max-width: 580px) {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 

@@ -11,7 +11,16 @@
             display:grid;
             margin:0.5rem;
             @media (max-width: 580px) {
-                margin-left: 30%;
+                display: none;
+            }
+        }
+        .site-header-main-logo-hb{
+            display:none;
+            margin:0.5rem;
+            @media (max-width: 580px) {
+                margin: auto;
+                display: grid;
+                grid-template-columns: 1fr;
             }
         }
         .site-header-main-item {

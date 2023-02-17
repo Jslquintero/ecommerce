@@ -17,8 +17,10 @@ import './../../assets/styles/styles.scss';
 export default function Bar(props) {
     return (
         <nav className='navbar grid grid-cols-2' id='navbar'>
-            <div></div>
-            <ul className='items grid-gap-1 content-right'>
+            <div className='site-header-main-logo-hb'>
+                <img alt="logo" src="https://picsum.photos/136/40" className="logo-bar"/>
+            </div>
+            <ul className='items'>
                 {
                 props.children
             }</ul>

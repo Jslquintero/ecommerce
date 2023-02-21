@@ -25,6 +25,7 @@ export default function Select(props) {
     return (
         <select value={selectedOption}
             onChange={handleChange}>
+            <option selected hidden>Elija una opción</option>
             {
             props.options.map((option) => (
                 <option value={

@@ -1,7 +1,22 @@
+body {
+  margin: 0;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+/*#region Seccion width*/
+.w-100 {
+  width: 100%;
+}
+
 .w-90 {
   width: 95%;
 }
 
+/*#endregion*/
+/*#region Seccion margenes*/
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -16,6 +31,28 @@
   margin: auto;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+/*#endregion*/
+/*#region Seccion padding*/
 .py-auto {
   padding-top: auto;
   padding-bottom: auto;
@@ -30,18 +67,44 @@
   padding: auto;
 }
 
+/*#endregion*/
+/*#region Seccion displays*/
 .grid {
   display: grid;
 }
 
-.grid-cols-3 {
+.none {
+  display: none;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-cols-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-gap-2 {
-  gap: 3rem;
+.grid-col-span-2 {
+  grid-column: span 2;
 }
 
+.grid-cols-80-20 {
+  grid-template-columns: 80% 20%;
+}
+
+/*#endregion*/
+/*#region Seccion distancia entre elementos*/
+.grid-gap-1 {
+  gap: 1rem;
+}
+
+.grid-gap-2 {
+  gap: 2rem;
+}
+
+/*#endregion*/
+/*#region Seccion contentido*/
 .content-center {
   align-items: start;
   justify-items: center;
@@ -63,6 +126,8 @@
   justify-self: start;
 }
 
+/*#endregion*/
+/*#region Seccion texto*/
 .text-center {
   text-align: center;
 }
@@ -73,4 +138,6 @@
 
 .text-right {
   text-align: right;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*#endregion*//*# sourceMappingURL=styles.css.map */

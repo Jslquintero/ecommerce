@@ -8,7 +8,6 @@
             grid-template-columns: 100%;
         }
         .site-header-main-logo{
-            display:grid;
             margin:0.5rem;
             @media (max-width: 580px) {
                 display: none;
@@ -17,9 +16,6 @@
         .site-header-main-item {
             justify-self: end;
             font-size: 1.3rem;
-            list-style: none;
-            margin-top: auto;
-            margin-bottom: auto;
             .links-text {
                 color: $secondaryFontColor;
                 text-decoration: none;
@@ -45,18 +41,14 @@
 .site-navigation-wrapper {
     .navbar {
         background-color: $primaryColor;
-        width: 100%;
         height: 6vh;
-        display: grid;
         .items {
-            display: grid;
             grid-template-columns: 1fr;
             .hb-bar {
                 display: none;
             }
             .links {
-                font-size: 1.3rem;
-                list-style: none;
+                font-size: 1.3rem;            
                 .nav-item {
                     text-align: center;
                     .links-text {
@@ -105,7 +97,6 @@
         justify-self: center;
         display: block;
         font-size: 1.3rem;
-        list-style: none;
         margin-left: 21%;
         .nav-item {
             display: grid;

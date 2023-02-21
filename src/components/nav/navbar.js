@@ -3,10 +3,10 @@
  * @name Navbar tipo function
  * @date 03 Febrero del 2023
  * @descripcion Componente global para el estilo y manejo de la barra de navegacion
- * @editorJose 
- * @dateUpdate 
- * @descripcionUpdate 
- * @version 1.0.0
+ * @editor Jose Salvador lopez
+ * @dateUpdate 21 Febrero del 2023
+ * @descripcionUpdate se agregan clases para evitar repetir codigo
+ * @version 1.0.1
  * @params {links, id, styleClass, children, ref}
  */
 
@@ -26,7 +26,7 @@ export default function Navbar(props) {
                     <div className='site-header-main-logo'>
                         <img alt="logo" src="https://picsum.photos/136/40" className="logo-bar"/>
                     </div>
-                    <div className='site-header-main-item'>
+                    <div className='site-header-main-item my-auto no-list-style '>
                         <Item items={
                             [
                                 {

@@ -86,13 +86,33 @@ export default function Home() {
             label: "Los Más Vendidos"
         }, {
             value: "2",
-            label: "Opcion 2"
+            label: "Los Más Vendidos"
         }, {
             value: "3",
-            label: "Opcion 3"
+            label: "Los Más Vendidos"
         }, {
             value: "4",
-            label: "opcion 4"
+            label: "Los Más Vendidos"
+        }
+    ]
+
+    const marca = [
+        {
+            value: "1",
+            label: "Los Más Vendidos"
+        }, {
+            value: "2",
+            label: "Orden alfabético"
+        }
+    ]
+
+    const precio = [
+        {
+            value: "1",
+            label: "Mayor a menor"
+        }, {
+            value: "2",
+            label: "Menor a mayor"
         }
     ]
 
@@ -112,11 +132,11 @@ export default function Home() {
                             </div>
                             <div className="select-brand grid">
                                 <h3>Marca</h3>
-                                <Select options={options}/>
+                                <Select options={marca}/>
                             </div>
                             <div className="select-price grid">
                                 <h3>Precio</h3>
-                                <Select options={options}/>
+                                <Select options={precio}/>
                             </div>
                         </div>
 

@@ -4,9 +4,9 @@
  * @date 03 Febrero del 2023
  * @descripcion Componente global para el estilo y manejo de la barra de navegacion
  * @editor
- * @dateUpdate 08 Febrero del 2023
- * @descripcionUpdate refactor de codigo
- * @version 1.0.2
+ * @dateUpdate 21Febrero del 2023
+ * @descripcionUpdate se agregan clases para evitar repetir codigo
+ * @version 1.0.3
  * @params {children}
  */
 
@@ -16,8 +16,8 @@ import './../../assets/styles/styles.scss';
 
 export default function Bar(props) {
     return (
-        <nav className='navbar grid' id='navbar'>
-            <ul className='items content-right'>
+        <nav className='navbar grid w-100' id='navbar'>
+            <ul className='items grid no-list-style content-right'>
                 {
                 props.children
             }</ul>

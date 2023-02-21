@@ -4,7 +4,6 @@
     background-color: $secondaryFontColor;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "img body";
     padding: 1rem;
@@ -26,9 +25,7 @@
     }
 
     .card-body {
-        display: grid;
         grid-area: body;
-        align-items: center;
         gap: 10px;
         padding: 1rem;
 
@@ -55,7 +52,6 @@
         .btn-card {
             background-color: $secondaryFontColor;
             border-radius: 10px;
-            display: grid;
             gap: 1rem;
             padding: 0.5rem 1rem;
             margin: 0.5rem 1rem;

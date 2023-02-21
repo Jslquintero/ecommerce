@@ -17,14 +17,14 @@ import './../../assets/styles/styles.scss';
 export default function Card(props) {
     return (
         <>
-            <div className='card'>
+            <div className='card grid'>
                 <div className="card-img">
                     <img src={
                             props.img
                         }
                         alt="imagen"/>
                 </div>
-                <div className="card-body">
+                <div className="card-body grid content-center">
                     <h3 className="card-title">
                         {
                         props.title
@@ -37,7 +37,7 @@ export default function Card(props) {
                         {
                         props.text
                     }</p>
-                    <Button styleType="btn-card visible" text="Comprar"/>
+                    <Button styleType="btn-card grid visible" text="Comprar"/>
                 </div>
             </div>
         </>
